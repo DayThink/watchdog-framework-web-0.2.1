@@ -1,0 +1,70 @@
+{
+  "name": "watch-dog",
+  "version": "0.2.0",
+  "description": "WatchDog",
+  "author": "Guo_guo <2006sszgg@163.com>",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "dev": "vue-cli-service serve --open --port=1003",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "countup": "^1.8.2",
+    "dayjs": "^1.7.5",
+    "echarts": "^4.6.0",
+    "js-cookie": "^2.2.0",
+    "js-md5": "^0.7.3",
+    "print-js": "^1.0.63",
+    "string-format": "^2.0.0",
+    "view-design": "^4.0.0",
+    "vue": "^2.5.10",
+    "vue-i18n": "^7.8.0",
+    "vue-json-editor": "1.4.0",
+    "vue-print-nb": "^1.5.0",
+    "vue-router": "^3.0.7",
+    "vue-table-with-tree-grid": "^0.2.4",
+    "vuedraggable": "^2.16.0",
+    "vuex": "^3.0.1",
+    "xlsx": "^0.13.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-rc.1",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-unit-mocha": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-standard": "^3.0.0-beta.10",
+    "@vue/test-utils": "^1.0.0-beta.10",
+    "chai": "^4.1.2",
+    "eslint-plugin-cypress": "^2.0.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "lint-staged": "^6.0.0",
+    "mockjs": "^1.0.1-beta3",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
